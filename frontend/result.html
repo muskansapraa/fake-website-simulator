@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    const clicked = localStorage.getItem("clickedLogin");
+
+    if (clicked === "true") {
+        document.write("<h2 style='color:red;'>⚠️ You fell for the phishing attack!</h2>");
+    } else {
+        document.write("<h2 style='color:green;'>✅ You avoided the phishing attempt!</h2>");
+    }
+
+    // Clear storage after use
+    localStorage.clear();
+</script>
+<body>
+
+    <div class="result-box">
+        <h1 style="color:red;">⚠️ Phishing Attack Detected!</h1>
+        <p><strong>This page was designed to trick you.</strong></p>
+
+        <p>You entered your credentials on a fake website.</p>
+
+        <h3>What you missed:</h3>
+        <ul>
+            <li>Urgent warning message creating pressure</li>
+            <li>No proper verification of website authenticity</li>
+        </ul>
+
+        <h3>How to stay safe:</h3>
+        <ul>
+            <li>Always check the website URL carefully</li>
+            <li>Avoid clicking on urgent or suspicious links</li>
+            <li>Do not enter credentials without verification</li>
+        </ul>
+
+        <button onclick="goHome()">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
