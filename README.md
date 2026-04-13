@@ -35,10 +35,11 @@ Users will learn how to:
 * Avoid entering credentials on phishing pages
 * Understand common phishing techniques
 
-## 🔮 Future Scope
+## Future Scope
 
 * AI-based phishing detection
 * User scoring system
 * Multiple simulation scenarios
 * Deployment with analytics tracking
 
+## By Muskan Sapra
