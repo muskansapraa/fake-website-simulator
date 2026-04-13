@@ -18,28 +18,41 @@
 </script>
 <body>
 
-    <div class="result-box">
-        <h1 style="color:red;">⚠️ Phishing Attack Detected!</h1>
-        <p><strong>This page was designed to trick you.</strong></p>
+    <div class="result-container">
 
-        <p>You entered your credentials on a fake website.</p>
+    <h1 class="result-title">⚠️ Phishing Attack Simulation Result</h1>
 
-        <h3>What you missed:</h3>
+    <p class="result-subtitle">
+        This was a simulated phishing website designed to test your awareness.
+    </p>
+
+    <div class="result-status" id="resultStatus"></div>
+
+    <div class="result-section">
+        <h3>⚠️ What You Missed</h3>
         <ul>
-            <li>Urgent warning message creating pressure</li>
-            <li>No proper verification of website authenticity</li>
+            <li>Use of urgency and fear to force quick action</li>
+            <li>Failure to verify website authenticity</li>
+            <li>Trusting professional-looking design blindly</li>
+            <li>Psychological manipulation techniques</li>
+            <li>Absence of proper security verification</li>
         </ul>
-
-        <h3>How to stay safe:</h3>
-        <ul>
-            <li>Always check the website URL carefully</li>
-            <li>Avoid clicking on urgent or suspicious links</li>
-            <li>Do not enter credentials without verification</li>
-        </ul>
-
-        <button onclick="goHome()">Try Again</button>
     </div>
 
-    <script src="script.js"></script>
+    <div class="result-section">
+        <h3>✅ How to Stay Safe</h3>
+        <ul>
+            <li>Always verify the website URL carefully</li>
+            <li>Avoid clicking on suspicious or urgent links</li>
+            <li>Enable two-factor authentication</li>
+            <li>Do not enter credentials without verification</li>
+        </ul>
+    </div>
+
+    <button onclick="goHome()">Try Again</button>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

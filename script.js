@@ -20,3 +20,6 @@ function handleLogin(event) {
 function goHome() {
     window.location.href = "index.html";
 }
+function goToLogin() {
+    window.location.href = "login.html";
+}
