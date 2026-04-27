@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #020617;
+            color: white;
+        }
+
+        .navbar {
+            background: #0f172a;
+            padding: 15px;
+            font-size: 20px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1;
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        th {
+            background: #1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    Admin Dashboard
+</div>
+
+<div class="container">
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Logins</h3>
+            <p id="total">12</p>
+        </div>
+
+        <div class="card">
+            <h3>Last Login</h3>
+            <p>Today</p>
+        </div>
+
+        <div class="card">
+            <h3>Status</h3>
+            <p style="color: #22c55e;">Active</p>
+        </div>
+    </div>
+
+    <h3 style="margin-top:30px;">Captured Data</h3>
+
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+
+        <tr>
+            <td>demo@test.com</td>
+            <td>1234</td>
+        </tr>
+
+        <tr>
+            <td>user@gmail.com</td>
+            <td>pass123</td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>

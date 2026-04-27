@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="result-container">
+
+    <h1 class="result-title">⚠️ Phishing Simulation Result</h1>
+
+    <p class="result-subtitle">
+        This was a simulated phishing attack designed to test your awareness.
+    </p>
+
+    <!-- RESULT STATUS -->
+    <div class="result-card fail">
+        ❌ You entered your credentials on a suspicious page.
+    </div>
+
+    <!-- ANALYSIS -->
+    <div class="result-section">
+        <h3>🔍 What Happened</h3>
+        <p>
+            The page you interacted with was designed to mimic a legitimate platform.
+            It used urgency and familiar design patterns to trick you into entering sensitive information.
+        </p>
+    </div>
+
+    <!-- MISTAKES -->
+    <div class="result-section">
+        <h3>⚠️ Key Mistakes</h3>
+        <ul>
+            <li>Did not verify the website URL</li>
+            <li>Reacted quickly to urgency message</li>
+            <li>Trusted visual design without validation</li>
+            <li>Entered credentials without checking authenticity</li>
+        </ul>
+    </div>
+
+    <!-- SAFETY -->
+    <div class="result-section">
+        <h3>✅ How to Stay Safe</h3>
+        <ul>
+            <li>Always check the URL before logging in</li>
+            <li>Avoid clicking on suspicious links</li>
+            <li>Use two-factor authentication</li>
+            <li>Be cautious of urgent security warnings</li>
+        </ul>
+    </div>
+
+    <button onclick="goHome()" class="retry-btn">Try Again</button>
+
+</div>
+<script>
+async function loadData() {
+    const res = await fetch("/results");
+    const data = await res.json();
+
+    console.log(data); // debug
+
+    // You can display however your original UI was
+}
+
+loadData();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
